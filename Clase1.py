@@ -18,11 +18,18 @@ comentario
 largo
 python
 
+
+Estructura funcion  nombre()
+
+
 """
 
 #Variables 
 
 my_string_variable = 'My string variable'
+num1 = 1
+num2 = 2
+
 print(my_string_variable)
 print(type(my_string_variable))
 
@@ -38,6 +45,13 @@ print(intnum)
 print(type(intnum))
 
 
+my_bool_variable = True
+
+print(len(my_string_variable))
+
+#Modelo1
+name, surname, alias, age = "Gonzalo", "Zeiss", "Gonza", 27
+print(name, surname, age, " y mi alias es ", alias)
 
 """
 my_int_variable = 5

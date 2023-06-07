@@ -23,7 +23,7 @@ print('Mi nombre es %s %s y mi edad es %d' %(name, surname, age)) #%s string %d 
 print(f'Mi nombre es {name} {surname} y mi edad es {age}')
 
 lenguage = 'Python'
-#a, b, c, d, e, f = lenguage
+a, b, c, d, e, f = lenguage
 
 #Division
 

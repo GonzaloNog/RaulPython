@@ -8,3 +8,5 @@ print(f'Me alegro de conocerle, Sr {nombre.capitalize()}{apellido.upper()}')
 edad = int(input (f'Digame su edad, Sr {apellido.upper()}'))
 
 print(f'Estos son sus datos, Sr Nombre: {nombre.capitalize()} Apellido: {apellido.upper()} Edad: {edad}')
+
+

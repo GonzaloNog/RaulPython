@@ -23,6 +23,8 @@ elif comando == 'no' or comando == "NO":
 else:
     print("tiene que ingresar si o no")
 
+    #
+
 
 
 

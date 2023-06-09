@@ -14,7 +14,14 @@ pregunta = str(input (f'¿Quiere abrir una nueva cuenta?, Sr {apellido.upper()}'
 
 #if 1 > 0:
 
+comando = input("Ingrese si o no")
 
+if comando == "si" or comando == "SI":
+    print("confirmo")
+elif comando == 'no' or comando == "NO":
+    print("denego")
+else:
+    print("tiene que ingresar si o no")
 
 
 

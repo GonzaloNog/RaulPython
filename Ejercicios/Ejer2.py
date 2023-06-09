@@ -7,18 +7,15 @@ los requisitos para una nueva cuenta"
 
 nombre, apellido, edad, sueldo, ciudad = input("Digame su nombre "), input("Digame su apellido "), int(input("Digame su edad ")),int(input("¿Cual es su salario anual? ")),input("¿En que ciudad vive? ")
 print(f'Su nombre es {nombre.capitalize()} {apellido.upper()} su edad es {edad} su salario anual es {sueldo} vive en {ciudad}')
+pregunta = (f'¿Quiere abrir una nueva cuenta?, Sr {apellido.upper()}')
 #my_list = [nombre, apellido, edad, sueldo, ciudad]
-pregunta = str(input (f'¿Quiere abrir una nueva cuenta?, Sr {apellido.upper()}'))
 
 
+pregunta = input("Ingrese si o no")
 
-#if 1 > 0:
-
-comando = input("Ingrese si o no")
-
-if comando == "si" or comando == "SI":
+if pregunta == "si" or pregunta == "SI":
     print("confirmo")
-elif comando == 'no' or comando == "NO":
+elif pregunta == 'no' or pregunta == "NO":
     print("denego")
 else:
     print("tiene que ingresar si o no")

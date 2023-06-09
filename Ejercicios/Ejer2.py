@@ -5,10 +5,15 @@ luego vamos a preguntarle al usuario si quiere abrir una cuenta bancaria nueva, 
 los requisitos para una nueva cuenta"
 '''
 
-nombre, apellido, edad, sueldo, ciudad = input("Digame su nombre "), input("Digame su apellido "), int(input("Digame su edad ")),int(input("¿Cual es su salario anual? ")),input("¿En que ciudad vive? ")
-print(f'Su nombre es {nombre.capitalize()} {apellido.upper()} su edad es {edad} su salario anual es {sueldo} vive en {ciudad}')
-pregunta = (f'¿Quiere abrir una nueva cuenta?, Sr {apellido.upper()}')
-#my_list = [nombre, apellido, edad, sueldo, ciudad]
+my_user = list()
+
+my_user.append(input("¿Cual es su Nombre? "))
+my_user.append(input(f'Digame su apellido, Sr {my_user[0].capitalize()} '))
+print(f'Me alegro de conocerle, Sr {my_user[0].capitalize()}{my_user[1].upper()} ')
+my_user.append(int(input (f'Digame su edad, Sr {my_user[1].upper()} ')))
+my_user.append(int(input (f'¿cual es su salario anual?, Sr {my_user[1].upper()} ')))
+my_user.append(int(input (f'¿en que ciudad vive?, Sr {my_user[1].upper()} ')))
+print(f'Estos son sus datos, Sr Nombre: {my_user[0].capitalize()} Apellido: {my_user[1].upper()} Edad: {my_user[2]} Salario: {my_user[3]} Vive en: {my_user[4]}')
 
 
 pregunta = input("Ingrese si o no")

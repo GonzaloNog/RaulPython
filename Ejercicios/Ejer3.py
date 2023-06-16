@@ -18,6 +18,7 @@ while game:
             print(num1 + num2)
         if(comand == "resta"):
             print(num1 - num2)
-    if(comand == "algo"):
+
+
     
 

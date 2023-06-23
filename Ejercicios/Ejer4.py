@@ -12,27 +12,13 @@ trabajadores = set()
 ingresantes = set()
 while(program):
     comand = input("Ingrese un comando ")
-    
-    
-    
     if(comand == "exit"):
         program = False
         print('Tenga buen dia')
-    
-    
-    
-    
-    
-    
-    if(comand == "registro"):
+    elif(comand == "registro"):
         registro = input("Ingrese documento sin puntos del empleado nuevo ")
         trabajadores.add(registro)
-    
-    
-    
-    
-    
-    if(comand == "ingreso"):
+    elif(comand == "ingreso"):
         ingresantes.clear()
         while(True):
             ingreso = input("Doc empleado entrante (exit salir)")
@@ -43,4 +29,8 @@ while(program):
         faltantes = trabajadores.difference(ingresantes)
         for item in faltantes:
             print(item, " Se encuentra ausente")
+    else:
+        print("Comando no encontrado")
+
+    
     

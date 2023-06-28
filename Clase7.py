@@ -22,3 +22,16 @@ def changeNumRet(num):
 
 numero = changeNumRet(10)
 print(numero)
+
+def print_name(name,surname):
+    print(f'{name} {surname}')
+
+print_name('gonzalo','zeiss')
+
+print_name(surname = "zeiss", name = 'gonzalo')
+
+def print_name(name: str, surname: str, alias = "sin alias"):
+    print(name + surname + ' ' + alias)
+
+print_name('gonzalo', 'zeiss', 'gonza')
+

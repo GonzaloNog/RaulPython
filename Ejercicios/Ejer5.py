@@ -22,8 +22,13 @@ while menu:
         menu = False
     
     elif(command == "operacion"):
-        nu01 = int(input("ingrese primer numero numero "))
-        nu02 = int(input("ingrese segundo numero numero "))
+        while(True):
+            try:
+                nu01 = int(input("ingrese primer numero numero "))
+                nu02 = int(input("ingrese segundo numero numero "))
+                break
+            except:
+                print('ingrese un numero entero')
         command = input("ingrese tipo de operacion(suma,resta,multiplicacion,division) ")
         if(command == "suma"):
             suma (nu01,nu02) 

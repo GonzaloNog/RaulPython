@@ -22,3 +22,23 @@ Funciones
     - si el usuario esta bien pero la clave mal nos dice que la clave esta errada
     - si el usuario no se encuentra nos dice que no esta registrado ningun usuario con ese nombre 
 '''
+
+
+menu = True
+command = "null"
+trabajadores = set()
+
+while (menu):
+    input("ingrese aquí su nombre")
+    if(command == "exit"):
+        menu = False
+        print("tenga un buen día")
+    
+    elif(command == "registro"):
+        registro = input("Ingrese documento sin puntos del empleado nuevo ")
+        trabajadores.add(registro)
+  
+
+
+
+

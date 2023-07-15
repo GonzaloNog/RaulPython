@@ -22,21 +22,52 @@ Funciones
     - si el usuario esta bien pero la clave mal nos dice que la clave esta errada
     - si el usuario no se encuentra nos dice que no esta registrado ningun usuario con ese nombre 
 '''
-
+#def main(menu):
 
 menu = True
-command = "null"
-trabajadores = set()
+comand = "null"
+usuario = set()
+#registro = set()
 
-while (menu):
-    input("ingrese aquí su nombre")
-    if(command == "exit"):
-        menu = False
-        print("tenga un buen día")
+while(menu):
     
-    elif(command == "registro"):
-        registro = input("Ingrese documento sin puntos del empleado nuevo ")
-        trabajadores.add(registro)
+    comand = input("ingrese un comando ")
+    if (comand == "exit"):
+        menu = False
+        print("tenga un buen dia ")
+        
+
+        
+    elif (comand == "registro"):
+        registro = input ("ingrese su nombre ")
+        usuario.add(registro)
+        if (registro == registro.capitalize()):
+           print("escriba todo en minusculas por favor ")
+        
+
+
+        
+         
+        
+        
+
+           
+else:
+    print("comando no encontrado" )
+ 
+        
+
+
+
+        
+
+
+
+
+    
+
+
+
   
 
 

@@ -43,10 +43,7 @@ def Main():
             print("tenga un buen dia ")
             
         elif (comand == "registro"):
-            registro = input ("ingrese su nombre ")
-            usuario.add(registro)
-            if (registro == registro.capitalize()):
-                print("escriba todo en minusculas por favor ")
+            print("registro")
             
         else:
             print("comando no encontrado" )

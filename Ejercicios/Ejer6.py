@@ -62,7 +62,23 @@ def mostrarUsuarios ():
         contenido  = usuario [element]
         print(f"\t-nombre de ususario: {element} clave:{contenido}")
 
+def logue():
+    user = input("¿cual es su usuario? ")
+    clave= input("¿cual es su clave?")
 
+    if (user in usuario):
+        print("Usuario correcto ")
+        if (usuario[user] == clave):
+            print ("Bienvenido tu usuario y clave son correctos")
+
+        else:
+            print ("la clave no corresponde al usuario ")
+    
+
+        return
+    else:
+        print("usuario no encontrado")
+        return
 
 def Main():
     menu = True
@@ -83,10 +99,13 @@ def Main():
             mostrarUsuarios ()
 
         elif (comand == "login"):
-            print("login")
+            logue()
          
         else:
             print("comando no encontrado" )
+
+
+    
 
 Main()
 

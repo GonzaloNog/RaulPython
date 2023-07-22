@@ -31,7 +31,43 @@ Funciones
 def main():
 
 '''
-usuario = set()
+usuario = {} 
+def Registro():
+    Nombre = input("Ingrese su nombre ")
+    if (Nombre.count(' ')):
+        print("No debe contener espacios")
+        return
+        
+    elif  (len(Nombre) < 6 ):
+        print ("tiene que tener almenos 6 caracteres")
+        return
+    
+    if(Nombre in usuario):
+        print("este nombre ya existe, pruebe otro nombre")
+        return
+   
+    Pass = input("Ingrese una clave nueva ")
+    if (Pass.count(' ')):
+        print("No debe contener espacios")
+        return
+    
+    elif (len(Pass) < 4 ):
+        print ("la clave tiene que tener almenos 4 caracteres")
+        return
+    usuario[Nombre] = Pass
+
+def mostrarUsuarios ():
+    
+    for element in usuario:
+        contenido  = usuario [element]
+        print(f"_nombre de ususario: {element} clave:{contenido}")
+
+        
+    
+    
+
+    #print(f'Me alegra conocerlo, {Nombre}')
+
 
 def Main():
     menu = True
@@ -41,10 +77,19 @@ def Main():
         if (comand == "exit"):
             menu = False
             print("tenga un buen dia ")
+
+        elif (comand == "list"):
+            print("List\nComandos:\n\tRegistro: Puedes registrar un nuevo usuario\n\tUsuarios: Puedes crearte un nuevo perfil\n\tLogin: puedes crear una contraseña nueva")    
             
         elif (comand == "registro"):
-            print("registro")
-            
+            Registro()
+        
+        elif (comand == "usuarios"):
+            mostrarUsuarios ()
+
+        elif (comand == "login"):
+            print("login")
+         
         else:
             print("comando no encontrado" )
 

@@ -57,16 +57,11 @@ def Registro():
     usuario[Nombre] = Pass
 
 def mostrarUsuarios ():
-    
+    print('\n---USUARIOS---')
     for element in usuario:
         contenido  = usuario [element]
-        print(f"_nombre de ususario: {element} clave:{contenido}")
+        print(f"\t-nombre de ususario: {element} clave:{contenido}")
 
-        
-    
-    
-
-    #print(f'Me alegra conocerlo, {Nombre}')
 
 
 def Main():
